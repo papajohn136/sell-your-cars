@@ -1,0 +1,135 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    /* font-size: 18px; */
+}
+
+body, p, h1, h2, h3, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-image: url(../img/Rectangle\ 1.jpg);
+    width: 1440px;
+    height: 680px;
+    max-width: 100%;
+
+}
+
+.header__inner {
+    /* background-image: url(../img/Rectangle\ 1.jpg); */
+    
+    
+    display: flex;
+    justify-content: space-between;
+    padding-left: 190px;
+    padding-right: 190px;
+
+    
+}
+
+.logo {
+    padding-top: 40px;
+    
+    
+}
+
+.menu__list {
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    list-style: none;
+    padding-top: 76px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   
+    
+}
+
+.menu__list-link {
+    border: 1px solid none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    transition: background .1s linear ;
+    
+}
+
+.menu__list-link:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #130E27;
+}
+
+.main__text {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 82px;
+    display: block;
+
+    margin-top: 72px;
+    margin-left: 190px;
+
+    
+}
+
+.color__one {
+    color: #130E27;
+}
+
+.color__two {
+    color: #fff;
+}
+
+.text__info-header {
+max-width: 460px;
+margin-left: 190px;
+margin-top: 50px;
+/* width: 494px; */
+}
+
+.text__info-inner {
+color: #FFF;
+font-family: PT Serif;
+font-size: 15px;
+
+font-weight: 400;
+line-height: 28px;
+}
+
+.our__service {
+    max-width: 1440px;
+    max-height: 500px;
+    display: flex;
+}
+
+.our__servise-title {
+font-family: Montserrat;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.our__color-one {
+    color: #C62314;
+}
+
+.our__service-two {
+    color: #130E27;
+}
+
+.our__service-group {
+    display: flex;
+}
