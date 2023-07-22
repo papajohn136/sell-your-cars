@@ -1,0 +1,232 @@
+html {
+    box-sizing: border-box;
+  
+}
+
+.conteiner {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #151515;
+}
+
+.header-main {
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    align-items: flex-end;
+    padding-bottom: 45px;
+
+}
+
+.menu__list {
+    display: flex;
+    gap: 35px;
+    margin: 0;
+}
+
+.menu__list-link {
+    color: #fff;
+    text-transform: uppercase;  
+    font-weight: 700;
+}
+
+.footer {
+    background-color: #151515;
+    padding: 50px 0 32px;
+    color: #fff;
+    
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.footer__menu-list {
+    max-width: 250px;
+}
+
+.footer__menu-title {
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+padding-bottom: 20px;
+}
+
+.footer__menu-item + .footer__menu-item {
+    padding-top: 20px;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.footer__copy {
+    max-width: 806px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.copy__nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 16px;
+}
+
+.main {
+    flex-grow: 1;
+   
+}
+
+/* для того что бы footer прижать к низу и отделить его от header у wrapper ставим:
+
+wrapper {
+min-height: 100%;
+display: flex;
+flex-direction: column;
+}
+
+затем у html и body устанавливаем высоту 100%
+html,
+body {
+    height: 100%;
+}
+
+у main ставим flex-grow: 1 что бы расширить содержимое
+
+.main {
+    flex-grow: 1;
+} */
+
+.top {
+    color: #fff;
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 50px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+   
+
+
+    
+}
+
+.title {
+    padding-bottom: 40px;
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.top__link {
+    background-color: #151515;
+    padding: 23px;
+    margin-top: 31px;
+    max-width: 430px;
+    width: 100%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Slider */
+
+/*делаем для картинок заполнение по всему экрану, без повтора*/
+.swiper-slide {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.swiper::after {
+    content: '';
+    background: rgba(21, 21, 21, .3);
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    
+}
+
+
+/* !important для того что бы переопределить родительский стиль, позволяет повысить приоритет стиля.*/
+.swiper-pagination-bullet  {
+    width: 120px;
+    height: 3px;
+    background-color: #151515;
+    opacity: 1;
+    border-radius: 0;
+    margin: 0 15px !important;
+    
+
+}
+
+.swiper-pagination-bullet-active {
+    height: 6px;
+    background-color: white;
+
+}
+
+.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 50px;
+}
+
+/* 3 часа  */
